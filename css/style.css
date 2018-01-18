@@ -1,0 +1,21 @@
+body {
+  background: #efeeed;
+  text-align: center;
+  font-family: Arail, sans-serif;
+  color: #121360; }
+
+button {
+  background: #7c7c7c;
+  color: #efeded;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  border-radius: 10px 0 10px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: 0;
+  margin: 20px 0; }
+  button:hover {
+    background: #545353; }
+
+/*# sourceMappingURL=style.css.map */
