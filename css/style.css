@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: Calibri, sans-serif;
+  background: #d4d4d4; }
+
+main {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center; }
+  main h1, main button {
+    text-transform: uppercase; }
+  main button, main input {
+    display: block;
+    margin: 20px auto; }
+  main button {
+    background: #3a3a3a;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 4px;
+    border: none;
+    outline: 0;
+    font-family: Calibri, sans-serif;
+    cursor: pointer; }
+    main button:hover {
+      background: #262626; }
+  main input {
+    padding: 8px 10px; }
+    main input:focus {
+      border-color: #3a3a3a;
+      box-shadow: 0 0 5px #3a3a3a; }
+  main ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none; }
+    main ul li {
+      margin: 15px 0 5px;
+      border-radius: 5px; }
+      main ul li img {
+        height: 100px;
+        margin: 20px;
+        box-shadow: 0 0 10px #000;
+        display: block;
+        float: left; }
+      main ul li h3 {
+        text-decoration: underline;
+        line-height: 120px;
+        padding-top: 10px;
+        text-align: left; }
+      main ul li .info, main ul li .data {
+        padding: 8px;
+        margin: 0;
+        text-align: left; }
+      main ul li .info {
+        color: #fff;
+        background: #3a3a3a; }
+      main ul li .data {
+        border-bottom: 1px solid #3a3a3a; }
+        main ul li .data:last-child {
+          border: none; }
+
+/*# sourceMappingURL=style.css.map */
