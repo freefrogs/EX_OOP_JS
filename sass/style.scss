@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+$font: 'Open Sans', sans-serif;
+$brown: #686154;
+$white: #fff;
+
+* {
+	box-sizing: border-box;
+}
+body {
+	background: url('https://images.pexels.com/photos/226589/pexels-photo-226589.jpeg?w=940&h=650&auto=compress&cs=tinysrgb') center 0/cover;
+	font-family: $font;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+button {
+	font-family: $font;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0 0 10px $brown;
+	outline: 0;
+	&:hover {
+		color: $white;
+		background: $brown;
+	}
+}
+.card-placeholder {
+	background: rgba(104,97,84,0.3);
+	border: 1px dashed $brown;
+	height: 80px;
+}
+
+.board {
+	text-align: center;
+	h1 {
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		text-shadow: 0 0 20px $white;
+		font-size: 36px;
+		margin: 10px 0 0;
+	}
+	.create-column {
+		padding: 4px 25px;
+		font-size: 16px;
+		text-transform: uppercase;
+		margin: 10px 0;
+	}
+}
+.column-container {
+	width: 96%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	.column {
+		flex: 1;
+		margin: 10px 4px 8px;
+		background: rgba(255,255,255,0.5);
+		min-width: 300px;
+		.column-title {
+			margin: 0;
+			padding: 5px;
+			text-decoration: underline;
+		}
+		button {
+			margin: 5px;
+		}
+		.column-card-list {
+			list-style: none;
+			min-height: 50px;
+			height: 50%;
+			margin: 0 auto;
+			padding: 5px;
+			.card {
+				text-align: left;
+				background: #fce7bf;
+				cursor: move;
+				box-shadow: 2px 2px 5px $brown;
+				margin: 5px;
+				padding: 10px;
+				display: inline-block;
+				.card-description {
+					margin: 5px 0 0;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
